@@ -1,0 +1,8 @@
+#!/bin/sh
+
+rspec "$@"
+
+if [ "$?" -gt 0 ]; then
+  echo "READ THE ERRORS! SLOW DOWN!!"
+  sleep 10
+fi
